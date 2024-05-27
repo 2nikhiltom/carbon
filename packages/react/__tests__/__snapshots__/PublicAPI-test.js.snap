@@ -541,6 +541,15 @@ Map {
         "isRequired": true,
         "type": "node",
       },
+      "orientation": Object {
+        "args": Array [
+          Array [
+            "horizontal",
+            "vertical",
+          ],
+        ],
+        "type": "oneOf",
+      },
       "readOnly": Object {
         "type": "bool",
       },
