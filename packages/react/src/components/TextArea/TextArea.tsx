@@ -233,7 +233,10 @@ const TextArea = React.forwardRef((props: TextAreaProps, forwardRef) => {
       if (!disabled && enableCounter && counterMode === 'word') {
         const key = evt.which;
 
-        if (maxCount && textCount >= maxCount && key === 32) {
+        if (
+          (maxCount && textCount >= maxCount && key === 32) ||
+          (maxCount && textCount >= maxCount && key === 13)
+        ) {
           evt.preventDefault();
         }
       }
@@ -430,6 +433,7 @@ const TextArea = React.forwardRef((props: TextAreaProps, forwardRef) => {
       disabled={disabled}
       rows={rows}
       readOnly={other.readOnly}
+      aria-readonly={other.readOnly ? true : false}
       ref={ref}
     />
   );
