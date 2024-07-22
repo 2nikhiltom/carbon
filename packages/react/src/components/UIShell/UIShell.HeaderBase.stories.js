@@ -575,7 +575,7 @@ export const HeaderWActionsAndSwitcher = (args) => (
               </SwitcherItem>
               <SwitcherDivider />
               <SwitcherItem href="#" aria-label="Link 2">
-                Link 2
+                Link 22
               </SwitcherItem>
               <SwitcherItem href="#" aria-label="Link 3">
                 Link 3
